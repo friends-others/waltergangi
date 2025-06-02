@@ -100,6 +100,37 @@
     p {
       margin: 0.5rem 0;
     }
+    .cronograma-table-wrapper {
+      overflow-x: auto;
+      margin-bottom: 1.2rem;
+    }
+    .cronograma-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-size: 1em;
+      margin-bottom: 0.5rem;
+    }
+    .cronograma-table th, .cronograma-table td {
+      border: 1px solid #e0e4ea;
+      padding: 0.7em 1em;
+      text-align: left;
+      vertical-align: top;
+    }
+    .cronograma-table th {
+      background: #f3f6fa;
+      color: #0077ff;
+      font-weight: 600;
+    }
+    .cronograma-table td {
+      background: #f8f9fa;
+    }
+    @media (max-width: 700px) {
+      .cronograma-table th, .cronograma-table td {
+        padding: 0.5em 0.5em;
+        font-size: 0.97em;
+      }
+    }
   </style>
 </head>
 <body>
@@ -307,10 +338,37 @@
       </div>
     </section>
     <section>
-      <h2>5. Plan de Producción y Presupuesto</h2>
+      <h2>5. PRODUCTION & BUDG ET PLAN</h2>
       <div class="presupuesto">
+        <p><strong>General schedule - production of 3 bronze bites spots</strong></p>
+        <div class="cronograma-table-wrapper">
+          <div style="margin-bottom:0.7rem;font-weight:500;">Estimated project duration: 4 weeks</div>
+          <table class="cronograma-table">
+            <thead>
+              <tr>
+                <th>Week</th>
+                <th>Main Activities</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="4">Week 1<br><span style="font-size:0.9em;color:#888;">General Pre-production</span></td>
+                <td>Monday – Wednesday</td>
+                <td>Technical script + production breakdowns<br><span style="font-size:0.95em;color:#666;">Final adjustments, breakdown by scene/location/wardrobe</span></td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>Casting (actors/actresses) + location scouting<br><span style="font-size:0.95em;color:#666;">Office, gym, indoors, outdoors, lab</span></td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>Storyboards, moodboards, initial graphic design<br><span style="font-size:0.95em;color:#666;">Visual references for each concept</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <ul>
-          <li><strong>Cronograma:</strong> [Fechas y fases principales]</li>
           <li><strong>Presupuesto:</strong> [Desglose aproximado]</li>
           <li><strong>Hitos clave:</strong> [De la concepción a la entrega final]</li>
         </ul>
